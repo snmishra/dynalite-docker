@@ -31,7 +31,7 @@ jobs:
         with:
           context: .
           build-args: |
-            NODE_VERSION=${{ matrix.node-version }}
+            NODEVERSION=${{ matrix.node-version }}
           push: true
           tags: snmishra/dynalite:${{ matrix.node-version }}
           cache-from: type=local,src=/tmp/.buildx-cache
