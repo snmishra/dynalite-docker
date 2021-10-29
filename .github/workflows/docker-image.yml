@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: true
       matrix:
-        node-version: ['lts-buster-slim']
+        node-version: ['lts-slim']
     steps:
       - name: Checkout
         uses: actions/checkout@v2
